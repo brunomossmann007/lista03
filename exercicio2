@@ -1,0 +1,54 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int main() {
+
+ char palavra[1][30];
+ int vogal = 0, consoante = 0, i, f;
+
+    for (i = 0; i < 1; i++) {
+            printf("Informe a %d palavra: ", ( i + 1 ) );
+            scanf(" %s",palavra[i]);
+        }
+
+ for (i = 0; i < 1; i++){
+        for ( f = 0; f < strlen(palavra[i]); f++){
+            if ((palavra[i][f] == 'a') || (palavra[i][f] == 'A')
+                    || (palavra[i][f] == 'e') || (palavra[i][f] == 'E')
+                    || (palavra[i][f] == 'i') || (palavra[i][f] == 'I')
+                    || (palavra[i][f] == 'o') || (palavra[i][f] == 'O')
+                    || (palavra[i][f] == 'u') || (palavra[i][f] == 'U')) {
+                vogal++;
+
+                    }
+
+        if ((palavra[i][f] == 'B') || (palavra[i][f] == 'b')
+                    || (palavra[i][f] == 'C') || (palavra[i][f] == 'c')
+                    || (palavra[i][f] == 'D') || (palavra[i][f] == 'd')
+                    || (palavra[i][f] == 'F') || (palavra[i][f] == 'f')
+                    || (palavra[i][f] == 'G') || (palavra[i][f] == 'g')
+                    ||(palavra[i][f] == 'H') || (palavra[i][f] == 'h')
+                    || (palavra[i][f] == 'J') || (palavra[i][f] == 'j')
+                    || (palavra[i][f] == 'K') || (palavra[i][f] == 'k')
+                    || (palavra[i][f] == 'L') || (palavra[i][f] == 'l')
+                    || (palavra[i][f] == 'M') || (palavra[i][f] == 'm')
+                    || (palavra[i][f] == 'N') || (palavra[i][f] == 'n')
+                    || (palavra[i][f] == 'P') || (palavra[i][f] == 'p')
+                    || (palavra[i][f] == 'Q') || (palavra[i][f] == 'q')
+                    || (palavra[i][f] == 'R') || (palavra[i][f] == 'r')
+                    || (palavra[i][f] == 'S') || (palavra[i][f] == 's')
+                    || (palavra[i][f] == 'T') || (palavra[i][f] == 't')
+                    || (palavra[i][f] == 'W') || (palavra[i][f] == 'w')
+                    || (palavra[i][f] == 'Y') || (palavra[i][f] == 'y')
+                    || (palavra[i][f] == 'X') || (palavra[i][f] == 'x')
+                    || (palavra[i][f] == 'Z') || (palavra[i][f] == 'z')){
+                consoante++;
+            }
+
+        }
+       
+        printf( "A palavra tem: %s, tem %d vogais, tem %d consoantes\n", palavra[i], vogal,consoante);
+
+ }
+    return 0;
+}
